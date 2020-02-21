@@ -39,7 +39,6 @@ void loop() {
         HMMTest(sCurrent, selectedBehavior);
         delay(5000); //You should remove the delay if testing the probabilities
     }
-    
     printReport();
     while(1);
 }
