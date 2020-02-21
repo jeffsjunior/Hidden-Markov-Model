@@ -34,10 +34,10 @@ void loop() {
 
     for(uint16_t i = 0; i <10000;i++){
         sCurrent = nextState(sCurrent);
-        //printData(sCurrent);
+        printData(sCurrent);
         tBehavior selectedBehavior = runBehavior(sCurrent, behaviorObj);
         HMMTest(sCurrent, selectedBehavior);
-        //delay(5000); //You should remove the delay if testing the probabilities
+        delay(5000); //You should remove the delay if testing the probabilities
     }
     printReport();
     while(1);
