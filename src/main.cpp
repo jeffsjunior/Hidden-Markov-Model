@@ -19,8 +19,6 @@ long HMMTableTests[nStates][nBehaviors];
 void HMMTest(sState sCurrent, tBehavior behavior);
 void printReport(void);
 
-
-
 Behavior behaviorObj = Behavior();
 sState sCurrent  = statesArray[sHappy];
 
@@ -40,7 +38,6 @@ void loop() {
         delay(5000); //You should remove the delay if testing the probabilities
     }
 
-    
     printReport();
     while(1);
 }
@@ -75,9 +72,6 @@ void printReport(void){
         };
         Serial.println();
     }
-    
-
-
     return;
 }
 
